@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .implicit{
+            width: 90%;
+            /* height: 600px; */
+            background-color: thistle;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            /* grid-template-columns: repeat(auto-fill, 80px); */
+            /* grid-template-columns:min-content  1fr 1fr minmax(150px, 300px); */
+            /*grid-template-rows: repeat(2, 100px);
+            grid-auto-flow: column;
+            grid-auto-columns: 150px; */
+            /* grid-template-rows: repeat( 2, 150px); */
+            /* justify-items: center;
+            align-items: center; */
+            /* justify-content: space-evenly;
+            align-content: space-evenly; */
+            /* grid-gap: 1rem; */
+        }
+
+        .implicit .item{
+            font-size: 2rem;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+        }
+
+        /* .implicit .item-3 {
+            justify-self: stretch;
+            align-self: stretch;
+            grid-row: 2 / 4;
+            grid-column: 1/-1;
+        } */
+    </style>
+</head>
+<body>
+    
+
+    <div class="implicit">
+        <div class="item"> <strong>Aligningggg Grid items</strong>  item 1 </div>
+        <div class="item">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+
+    <div class="positioning">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3"><strong> Positioning and Spanning Grid Items</strong> item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+    
+    <div class="naming">
+        <div class="header">NAMING   Header</div>
+        <div class="sidebar">SideBar</div>
+        <div class="main">Main</div>
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+        <div class="box-3">Box 3</div>
+        <div class="footer">Footer</div>
+    </div>
+
+
+
+</body>
+</html>
